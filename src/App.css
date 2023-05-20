@@ -65,7 +65,6 @@ header nav {
   justify-content: space-between;
   padding: 1rem 0;
   flex-wrap: wrap;
-  gap: 2rem;
   align-items: center;
   font-family: 'myFont2', 'Courier New', Courier, monospace;
   color: var(--grey);
@@ -97,12 +96,8 @@ h1 span:nth-child(1) {
   margin-bottom: 0.7rem;
 }
 
-h1+p {
-  line-height: 1.5;
-}
-
 .hero_header {
-  transform: translateX(-300px);
+  transform: translateX(-50px);
   transition: opacity 1s ease-in, transform 1s linear;
 }
 
@@ -122,8 +117,10 @@ h1+p {
 .hero_text {
   color: var(--grey);
   opacity: 0;
-  transform: translateX(300px);
+  transform: translateX(50px);
   transition: opacity 1s ease-in, transform 1s linear;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
 
 .hero_text.slide-in {
@@ -218,6 +215,7 @@ h1+p {
   transform: translateY(200px);
   opacity: 0;
   transition: opacity 1s ease-in, transform 1s ease-in-out;
+  font-size: 1.1rem;
 }
 
 .slide_in_about-me {
@@ -372,6 +370,12 @@ footer p {
 
 footer a:hover {
   color: white;
+}
+
+@media screen and (min-width:360px) {
+  header nav {
+    gap: 2rem;
+  }
 }
 
 @media screen and (min-width:599px) {
