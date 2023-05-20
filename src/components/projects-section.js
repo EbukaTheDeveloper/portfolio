@@ -136,7 +136,7 @@ const Card3 = () => {
                     alt="Furniture store project user interface"
                 />
             </div>
-            <h3>Furniture store landing page</h3>
+            <h3>Furniture e-commerce store</h3>
             <p>The site serves as an all-in-one platform, offering a wide range of furniture products,
                 from modern designs to timeless classics. With a focus on user-centric design and intuitive functionality, I aimed to provide a delightful and convenient shopping experience for customers. </p>
             <div className="project_link">
@@ -178,7 +178,7 @@ const Card4 = () => {
                     width="1275" height="635" alt="Portfolio website project user interface"
                 />
             </div>
-            <h3>Furniture store </h3>
+            <h3>My Portfolio </h3>
             <p>This site is a showcase of my skills, projects, and experiences as a web developer. Built with React, this site represents my dedication to crafting elegant and efficient web solutions while leveraging modern technologies.</p>
             <p>This is actually the first version, i look forward to update it in the future.</p>
             <div className="project_link">

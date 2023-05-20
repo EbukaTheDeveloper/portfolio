@@ -19,7 +19,7 @@ export default function Hero_section() {
                     <span>Frontend Developer</span>
                 </h1>
                 <p className="hero_text" ref={ref2}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tortor eu massa imperdiet ornare. Fusce tempus condimentum dolor, vel dapibus mauris euismod sit amet. Donec semper mauris sit amet leo auctor blandit. Cras eu urna libero.
+                    As a person who loves science and technology, i'm passionate about building and designing accessible and responsive user interface of a website and also make the web a better place with my skills.
                 </p>
             </div>
             <div className="balls_wrapper">
