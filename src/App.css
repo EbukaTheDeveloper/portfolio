@@ -173,14 +173,14 @@ h1 span:nth-child(1) {
 .profile_img {
   position: relative;
   filter: drop-shadow(0px 20px 50px rgba(0, 178, 255, 0.25));
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 
 .elipse_2 {
   background: linear-gradient(270deg, var(--green-blue) 0%, var(--blue) 66.67%, var(--purple) 100%);
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
   position: absolute;
@@ -395,6 +395,16 @@ footer a:hover {
 }
 
 @media screen and (min-width:850px) {
+  .profile_img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .elipse_2 {
+    width: 150px;
+    height: 150px;
+  }
+
   .menu {
     gap: 3rem;
   }
