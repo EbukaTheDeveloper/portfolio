@@ -238,7 +238,6 @@ h1 span:nth-child(1) {
   transform: translateY(200px);
   opacity: 0;
   transition: opacity 1s ease-in, transform 1s ease-in-out;
-
 }
 
 .project_card:before {
@@ -273,6 +272,13 @@ h1 span:nth-child(1) {
   z-index: 1;
   text-decoration: none;
   color: inherit;
+}
+
+.figma_ui>a {
+  text-decoration: underline;
+  color: white;
+  display: inline-block;
+  position: relative;
 }
 
 .project_link {
@@ -320,7 +326,8 @@ h1 span:nth-child(1) {
 #js_bar,
 #react_bar,
 #git_bar,
-#linux_bar {
+#linux_bar,
+#webpack_bar {
   position: relative;
   height: 12px;
   background: linear-gradient(270deg, var(--green-blue) 0%, var(--blue) 66.67%, var(--purple) 100%);
@@ -358,7 +365,12 @@ h1 span:nth-child(1) {
 
 #linux_bar.linux_bar_fill {
   opacity: 1;
-  width: 40%;
+  width: 50%;
+}
+
+#webpack_bar.webpack_bar_fill {
+  opacity: 1;
+  width: 60%
 }
 
 footer p {
