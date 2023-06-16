@@ -9,6 +9,7 @@ export default function SkillsSection() {
             <Skill_4 />
             <Skill_5 />
             <Skill_6 />
+            <Skill_7 />
         </section>
     )
 }
@@ -21,7 +22,7 @@ const Skill_1 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
         observer.observe(ref.current);
         return () => observer.disconnect();
     }, []);
@@ -52,7 +53,7 @@ const Skill_2 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
         observer.observe(ref.current);
         return () => observer.disconnect();
     }, []);
@@ -83,7 +84,7 @@ const Skill_3 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
         observer.observe(ref.current);
         return () => observer.disconnect();
     }, []);
@@ -114,7 +115,7 @@ const Skill_4 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
         observer.observe(ref.current);
         return () => observer.disconnect();
     }, []);
@@ -145,7 +146,7 @@ const Skill_5 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
         observer.observe(ref.current);
         return () => observer.disconnect();
     }, []);
@@ -167,7 +168,6 @@ const Skill_5 = () => {
         </div>
     )
 }
-
 const Skill_6 = () => {
     const [isIntersecting, setIsIntersecting] = useState(false);
     const [hasTransitioned, setHasTransitioned] = useState(false);
@@ -176,7 +176,37 @@ const Skill_6 = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
+        observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
+    useEffect(() => {
+        if (isIntersecting && !hasTransitioned) {
+            ref.current.classList.add('webpack_bar_fill');
+            setHasTransitioned(true);
+        }
+    }, [isIntersecting, hasTransitioned]);
+    return (
+        <div className="skill_bar_section">
+            <div className="details">
+                <span>Webpack</span>
+                <span>60%</span>
+            </div>
+            <div className="bar">
+                <div id="webpack_bar" ref={ref}></div>
+            </div>
+        </div>
+    )
+}
+const Skill_7 = () => {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    const [hasTransitioned, setHasTransitioned] = useState(false);
+    const ref = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsIntersecting(entry.isIntersecting);
+            }, { threshold: 0.2 });
         observer.observe(ref.current);
         return () => observer.disconnect();
     }, []);
