@@ -22,7 +22,7 @@ const Card1 = () => {
         const observer = new IntersectionObserver(([entry]) => {
             setIsIntersecting(entry.isIntersecting);
         },
-            { threshold: 0.5 }
+            { threshold: 0.3 }
         );
         observer.observe(ref.current);
         return () => observer.disconnect();
@@ -66,7 +66,7 @@ const Card2 = () => {
         const observer = new IntersectionObserver(([entry]) => {
             setIsIntersecting(entry.isIntersecting);
         },
-            { threshold: 0.5 }
+            { threshold: 0.3 }
         );
         observer.observe(ref.current);
         return () => observer.disconnect();
@@ -111,7 +111,7 @@ const Card3 = () => {
         const observer = new IntersectionObserver(([entry]) => {
             setIsIntersecting(entry.isIntersecting);
         },
-            { threshold: 0.5 }
+            { threshold: 0.3 }
         );
         observer.observe(ref.current);
         return () => observer.disconnect();
@@ -155,7 +155,7 @@ const Card4 = () => {
         const observer = new IntersectionObserver(([entry]) => {
             setIsIntersecting(entry.isIntersecting);
         },
-            { threshold: 0.5 }
+            { threshold: 0.3 }
         );
         observer.observe(ref.current);
         return () => observer.disconnect();
@@ -169,22 +169,23 @@ const Card4 = () => {
     return (
         < article className="project_card" ref={ref}>
             <div>
-                <img src="https://res.cloudinary.com/dvcx5l1vb/image/upload/w_300,c_scale,f_auto,q_80/v1684590294/Screenshot-30_wliq0q.png"
-                    srcSet="https://res.cloudinary.com/dvcx5l1vb/image/upload/w_300,c_scale,f_auto,q_80/v1684590294/Screenshot-30_wliq0q.png 300w,
-                  https://res.cloudinary.com/dvcx5l1vb/image/upload/w_600,c_scale,f_auto,q_80/v1684590294/Screenshot-30_wliq0q.png 600w,
-                  https://res.cloudinary.com/dvcx5l1vb/image/upload/w_900,c_scale,f_auto,q_80/v1684590294/Screenshot-30_wliq0q.png 900w,
-                  https://res.cloudinary.com/dvcx5l1vb/image/upload/w_1200,c_scale,f_auto,q_80/v1684590294/Screenshot-30_wliq0q.png 1200w"
+                <img src="https://res.cloudinary.com/dvcx5l1vb/image/upload/w_300,f_auto,q_80/v1686912954/satellite-page_jzrymm.png"
+                    srcSet="https://res.cloudinary.com/dvcx5l1vb/image/upload/w_300,f_auto,q_80/v1686912954/satellite-page_jzrymm.png 300w,
+                    https://res.cloudinary.com/dvcx5l1vb/image/upload/w_600,f_auto,q_80/v1686912954/satellite-page_jzrymm.png  600w,
+                    https://res.cloudinary.com/dvcx5l1vb/image/upload/w_900,f_auto,q_80/v1686912954/satellite-page_jzrymm.png  900w,
+                    https://res.cloudinary.com/dvcx5l1vb/image/upload/w_1200,f_auto,q_80/v1686912954/satellite-page_jzrymm.png  1200w"
                     loading="lazy"
-                    width="1275" height="635" alt="Portfolio website project user interface"
+                    width="1275" height="635" alt="internet satellite landing page project user interface"
                 />
             </div>
-            <h3>My Portfolio </h3>
-            <p>This site is a showcase of my skills, projects, and experiences as a web developer. Built with React, this site represents my dedication to crafting elegant and efficient web solutions while leveraging modern technologies.</p>
-            <p>This is actually the first version, i look forward to update it in the future.</p>
+            <h3>Satellite Internet landing page </h3>
+            <p>A landing page built with the core languages of the web {'(HTML, JAVASCRIPT and CSS)'}. I added a scroll based animation with "intersection observer api" in javascript to make the page interactive. </p>
+            <p class="figma_ui">A big thanks to <a href="https://figmaui4free.com/free-manage-satellite-internet-landing-page/" target="_blank" rel="noopener noreferrer">figmaui4free</a> for providing a free figma user interface file.</p>
             <div className="project_link">
-                <a>Live Preview</a>
-                <a href="https://github.com/EbukaTheDeveloper/portfolio" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="https://ebukathedeveloper.github.io/satellite-internet-landing-page/" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                <a href="https://github.com/EbukaTheDeveloper/satellite-internet-landing-page" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
+
         </ article>
     )
 }
