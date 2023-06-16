@@ -91,7 +91,7 @@ const Card2 = () => {
                     alt="Weather app project user interface"
                 />
             </div>
-            <h3>Weather App: A Web-Based Application for Checking the Weather</h3>
+            <h3>Weather Web Application</h3>
             <p>Weather app built with HTML/CSS and JavaScript and asynchronous programming using async functions to make it more responsive and user-friendly.
                 The app allows users to enter their location or use their current location to retrieve real-time weather data from an API,
                 and displays the current weather conditions, temperature, wind speed, and other relevant information.</p>
